@@ -6,3 +6,6 @@ You can assume that the user betty will exist when we will run your script
 
 1-who_am_i
 a script that prints the effective username of the current user.
+
+2-groups
+a script that prints all the groups the current user is part of.
