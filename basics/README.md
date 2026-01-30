@@ -6,3 +6,6 @@ Displays the contents of the current directory using the ls command.
 
 2-bring_me_home
 Changes the current working directory to the user’s home directory using cd ~
+
+3-listfiles
+Display current directory contents in a long format
