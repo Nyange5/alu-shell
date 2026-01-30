@@ -20,3 +20,6 @@ And hidden files starting with .
 
 6-firstdirectory
 Creates a directory named my_first_directory in /tmp/
+
+7-movethatfile
+To move the file betty from /tmp/ to /tmp/my_first_directory/
