@@ -1,2 +1,2 @@
-#!bin/bash
- ls
+1-listit
+Displays the contents of the current directory using the ls command.
