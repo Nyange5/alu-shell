@@ -3,3 +3,6 @@ Prints the absolute path of the current working directory.
 
 1-listit
 Displays the contents of the current directory using the ls command.
+
+2-bring_me_home
+Changes the current working directory to the user’s home directory using cd ~
