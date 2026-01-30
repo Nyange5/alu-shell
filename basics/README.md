@@ -23,3 +23,6 @@ Creates a directory named my_first_directory in /tmp/
 
 7-movethatfile
 To move the file betty from /tmp/ to /tmp/my_first_directory/
+
+8-firstdelete
+Delete the file betty.
