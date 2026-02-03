@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# script that lists directories in a list format with some iterations
+
+for file in *
+do
+echo "${file#*-}"
+
+done
