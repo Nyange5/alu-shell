@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Dig_the-data
 
-awk '{ count[$1, $9]++ }' apache-acess.log | sort | uniq -c | sort -nr
+awk '{count[$1" "$9]++} END {for (key in court) printf "%7d %s\n", count[key], key}' apache-access.log | sort -nr
