@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Dig_the-data
 
-awk '{ count[$1, $9]++ } END { for (key in court) { split(key, k, SUBSEP): print count[key], k[1], k[2] } }' apache-acess.log | sort -nr
+awk '{ count[$1, $9]++ }' apache-acess.log | sort | uniq -c | sort -nr
