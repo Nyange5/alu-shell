@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # Dig_the-data
 
-awk '$1 ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/ && $9 ~ /^[0-9]{3}$/ {count[$1" "$9]++}
-     END {for (i in count) print count[i], i}' access.log | sort -rn
+awk '{ print $1 " " $9}' apache-access.log | sort | uniq -c | sort -rn
