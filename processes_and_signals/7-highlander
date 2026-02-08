@@ -1,8 +1,7 @@
-#!/bin/bash
-# This script displays "To infinity and beyond" indefinitely
-# It also displays "I am invincible!!!" inbetween each iteration
+#!/usr/bin/env bash
+# This script displays:
 
-while true 
+while :
 do
 echo "To infinity and beyond"
 sleep 2
