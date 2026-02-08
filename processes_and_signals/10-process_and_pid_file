@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Creating PID file
 
 echo $$ | sudo tee /var/run/myscript.pid
