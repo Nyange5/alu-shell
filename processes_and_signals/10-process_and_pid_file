@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Creating PID file
+
+echo $$ | sudo tee /var/run/myscript.pid
+
+# Trap handlers
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'echo "I hate the kill command"; rm -f /var/run/myscript.pid; exit' SIGTERM
+trap 'rm -f /var/run/myscript.pid; exit' SIGQUIT
+
+while :
+do
+
+echo "To infinity and beyond"
+sleep 2
+
+done

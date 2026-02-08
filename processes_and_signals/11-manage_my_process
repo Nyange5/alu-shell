@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Bash (init) script that manages manage_my_process.
+
+PID="/var/run/my_process.pid"
+Process="./manage_my_process"
+
+case "$1" in
+start)
+$process & 

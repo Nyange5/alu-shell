@@ -1,0 +1,6 @@
+#!/bin/bash
+# Bash script that displays lines containing the bash word
+
+ps auxf | grep bash
+
+# shellcheck disable=SC2009
