@@ -7,8 +7,8 @@ process="./manage_my_process"
 case "$1" in
 start)
 
-	sudo $process & 
-	echo $! > "$PID"
+	"$process" & 
+	echo $! | sudo tee "$PID" > /dev/null
         echo "manage_my_process started"
         ;;
     stop)
@@ -23,8 +23,8 @@ start)
            sudo kill "$(cat "$PID")"
            sudo rm -f "$PID"
         fi
-       sudo $process &
-        echo $! > "$PID"
+       "$process" &
+        echo $! | sudo tee "$PID" > /dev/null
         echo "manage_my_process restarted"
         ;;
     *)
